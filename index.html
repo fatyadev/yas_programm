@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Yaş Hesablama Proqramı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(214, 242, 250);
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 35px;
+        }
+        h2 {
+            padding: 10px;
+            margin: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yaş hesablama proqramı</h1>
+    <h2 id="yas"></h2>
+
+    <script>
+        let yas = +prompt('Yaşınızı daxil edin: ');
+
+        if (yas < 13) {
+            document.getElementById("yas").innerHTML = 'Uşaq';
+        } else if (yas < 17) {
+            document.getElementById("yas").innerHTML = 'Yeniyetmə';
+        } else if (yas < 35) {
+            document.getElementById("yas").innerHTML = 'Gənc';
+        } else if (yas < 45) {
+            document.getElementById("yas").innerHTML = 'Cavan';
+        } else if (yas < 65) {
+            document.getElementById("yas").innerHTML = 'Qoca';
+        } else if (yas <= 100) {
+            document.getElementById("yas").innerHTML = 'Təqaüdçü';
+        } else {
+            document.getElementById("yas").innerHTML = 'Sən ölmüsən, xəbərin yoxdur...';
+        }
+    </script>
+</body>
+</html>
